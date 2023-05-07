@@ -1,0 +1,12 @@
+
+
+billofmaterials:
+  table-name: billofmaterials
+  schema: production
+  query: SELECT
+      *
+    FROM
+      billofmaterials
+  incremental: true
+  incremental-filter: modifieddate
+  spec: production/billofmaterials
